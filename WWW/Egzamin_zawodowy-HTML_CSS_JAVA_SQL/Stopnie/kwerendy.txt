@@ -1,0 +1,7 @@
+a) insert into lokalizacja values("3","KAT1","Katowice, Korfantego 105");
+
+b) select id from pogoda where temperatura > 20;
+
+c) select lokalizacja.id, prognoza.dataProg from lokalizacja,prognoza,pogoda where wilgotnosc > 50 and (lokalizacja.id=prognoza.Lokalizacja_id and pogoda.id=prognoza.Pogoda_id);
+
+d) select lokalizacja.nazwa, pogoda.id from pogoda,prognoza,lokalizacja where dataProg="2015-07-02" and (lokalizacja.id=prognoza.Lokalizacja_id and pogoda.id=prognoza.Pogoda_id);

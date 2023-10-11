@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC >
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Egzamin zawodowy E14" />
+	<meta name="keywords" content="Egzamin, zawodowy, e14" />
+	<meta name="author" content="P.Błaziński" />
+	<link rel="stylesheet" href="styl.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="java.js"></script>
+      <title>Stacja meteo</title>
+</head>
+
+<body>
+
+<div id="baner">
+	<h1>STACJA METEO</h1>
+</div>
+<div id="p_lewy">
+	<h2>Dokumentacja wyników zapytań w bazie Meteo</h2>
+	<table>
+		<tr>
+			<td><img src="kw1.jpg" alt="kwerenda1" /></td>
+			<td><img src="kw2.jpg" alt="kwerenda2" /></td>
+		</tr>
+		<tr>
+			<td><img src="kw3.jpg" alt="kwerenda3" /></td>
+			<td><img src="kw4.jpg" alt="kwerenda4" /></td>
+		</tr>
+	</table>
+</div>
+<div id="p_prawy">
+	<h2>Zamiana jednostek temperatury</h2>
+	<form name="form1" method="POST">
+	Temperatura w <sup>o</sup>C<input name="pole1" type="text" value="" /><br><br>
+	
+		<input type="button" name="kelwiny" value="Kelwiny" onclick="oblicz_k()" />
+		<input type="button" name="fahren" value="Fahrenheity" onclick="oblicz_f()"/>
+	</form>
+		<p id="wynik"></p>
+	<h2>Do pobrania</h2>
+	<ul>
+		<li><a href="kwerendy.txt">Kwerendy</a></li>
+		<li><a href="meteo.sql">Eksport MySQL</a></li>
+		<!-- ŚCIEZKI ZMIENIONE ZE WZGLĘDU NA PROBLEMY Z HOSTINGIEM, POPRAWNE TO " ../baza/meteo.sql " I "../baza/kwerendy.txt" -->
+	</ul>
+</div>
+<div id="stopka">
+	<p>PESEL AUTORA STRONY: 00000000001</p>
+</div>
+<a href="zadanie.pdf" target="blank" style="color: black">Link do zadania</a>
+
+</body>
+</html>

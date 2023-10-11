@@ -1,0 +1,84 @@
+<html>
+
+	<head>
+		<script>
+			var zmienna_a;
+			var znak='';
+			function liczba(a,c)
+			{
+			var b=document.getElementById(c);
+			b.value+=a;
+			}
+			function plus(a,c)
+			{
+			var b=document.getElementById(c);
+			zmienna_a=parseFloat(b.value);
+			b.value="";
+			znak=a;
+			}
+			function rownosc(c)
+			{
+			var b=document.getElementById(c);
+			var zmienna_b=parseInt(b.value);
+			var c=0;
+			if(znak=='+'){c=zmienna_a+zmienna_b;};
+			if(znak=='-'){c=zmienna_a-zmienna_b;};
+			if(znak=='*'){c=zmienna_a*zmienna_b;};
+			if(znak=='/'){c=zmienna_a/zmienna_b;};
+			if(znak=='AC'){c=0};
+			b.value=c;
+			}
+		</script>
+		
+		<style> 
+			
+			#calc{
+			position:relative;
+			left:10%;
+			top:5%;
+			
+			background-color:#FFFFFF ;
+			
+			}
+			
+
+			button {
+			  background-color: #B0BEC5; 
+			  color: white;
+			  padding: 10px 30px;
+			  width: 100px;
+			  margin:3px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  font-style:courirer;
+			}
+			input{
+			  width:422px;
+			  margin:3px;
+			  color: black;
+			  font-size:25px;
+			}
+	</style>
+	</head>
+	<body>
+
+
+	<div id="calc">
+		<h1> Kalkulator </h1>
+		
+		<input id="kalk" type="text"></input></br>
+		<button onclick="plus('AC','kalk')"> AC  </button><button onclick="liczba('(','kalk')"> ( </button><button onclick="liczba(')','kalk')"> ) </button> <button  onclick="plus('/','kalk')"> / </button></br>
+		<button onclick="liczba('1','kalk')"> 1 </button><button onclick="liczba('2','kalk')"> 2 </button><button onclick="liczba('3','kalk')"> 3 </button> <button onclick="plus('*','kalk')"> * </button></br>
+		<button onclick="liczba('4','kalk')"> 4 </button><button onclick="liczba('5','kalk')"> 5 </button><button onclick="liczba('6','kalk')"> 6 </button> <button onclick="plus('-','kalk')"> - </button></br>
+		<button onclick="liczba('7','kalk')"> 7 </button><button onclick="liczba('8','kalk')"> 8 </button><button onclick="liczba('9','kalk')"> 9 </button> <button onclick="plus('+','kalk')"> + </button></br>
+		<button onclick="liczba('00','kalk')"> 00 </button><button onclick="liczba('0','kalk')"> 0 </button><button onclick="liczba('.','kalk')"> . </button> <button onclick="rownosc('kalk')"> = </button></br>
+	</div>
+
+
+
+
+	</body>
+
+</html>

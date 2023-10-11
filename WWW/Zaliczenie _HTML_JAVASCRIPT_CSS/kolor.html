@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset ="UTF-8">
+
+		<title>zmiana koloru</title>
+	</head>
+	
+	<body>
+		<button class="button" onclick="zmiana()">Zmiana koloru</button>
+		<p class='cos'><b>Matematyka</b></p>
+			<script>
+			function zmiana()
+			{
+			var kolor="#"+ Math.floor(Math.random()*16777215).toString(16)
+			const btn=document.querySelector(".cos");
+			btn.style["color"]=kolor;
+			}
+
+
+			</script>
+	</body>
+</html>

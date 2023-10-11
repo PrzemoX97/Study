@@ -1,0 +1,115 @@
+body {
+  font-family: Trebuchet MS, sans-serif;
+  background: white ;
+}
+
+#big {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 99.9%;
+	height: 100%;
+}
+
+#top {
+	width: 96%;
+	height: 15%;
+	top:1%;
+	left:2%;	
+	position: relative;
+	background: #708090;
+	border: 2px solid #708090;
+	border-radius: 50px;
+}	
+
+#left {
+	width: 15%;
+	height: 80%;
+	top:2%;
+	left:2%;
+	position: relative;
+	float: left;
+	background: #FF6B01;
+	border: 2px solid #FF6B01;
+	border-radius: 50px 20px;
+}
+
+#middle {
+	width: 60%;
+	height: 80%;
+	top:2%;
+	left: 4%;
+	position: relative;
+	float: left;
+	background: grey;
+	border: 2px solid grey;
+	border-radius: 50px;
+	
+}
+
+#right {
+	width: 16%;
+	height: 80%;
+	top:2%;
+	left:6%;
+	position: relative;
+	float: left;
+	background: #FF6B01;
+	border: 2px solid #FF6B01;
+	border-radius: 50px 20px;
+	text-align: center;
+}
+
+
+.vertical-menu {
+  width: 90%; 
+  left:20px; 
+  top:20%;
+  position:relative;
+}
+
+.vertical-menu a {
+  background-color: #eee; 
+  color: black; 
+  display: block; 
+  padding: 22px; 
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; 
+}
+
+.vertical-menu a.active {
+  background-color: grey; 
+  color: white;
+}
+
+#top-img {
+ width:300px;
+ height:180px;
+ border-radius: 40%;
+ margin-left: 50px;
+ margin-top: 10px;
+}
+
+#marq {
+width:60%;
+height:70%;
+margin-left:5%;
+}	
+#midp {
+  size:4px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  text-align:center;
+}
+
+
+
+
+
+
+

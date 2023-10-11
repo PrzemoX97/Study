@@ -1,0 +1,37 @@
+a{
+	color: yellow;
+}
+div#baner{
+	 background-color: #4A7684;
+	 color: white;
+	 text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+	 padding: 20px;
+}
+div#p_prawy{
+	 background-color: #4A7684;
+	 color: white;
+	 width: 35%;
+	 height: 500px;
+	 float: left;
+}
+div#stopka{
+	 background-color: #4A7684;
+	 color: white;
+	 text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+	 padding: 20px;
+	 clear: both;
+}
+div#p_lewy{
+	width: 65%;
+	height: 500px;
+	float: left;
+	text-align: center;
+}
+img{
+	border: 1px solid;
+}
+p#wynik{
+	min-height: 40px;
+}

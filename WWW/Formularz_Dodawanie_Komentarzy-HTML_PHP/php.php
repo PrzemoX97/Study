@@ -1,0 +1,56 @@
+<?php
+if(isSet($_POST['komentarz'])){
+$tekst = substr($_POST['komentarz'],0,255);
+$tekst = strip_tags($tekst)."\n";
+
+if(!$op = fopen('pass.txt', 'a')){
+echo "B³¹d!. Nie mo¿na otworzyæ pliku opinie.txt";
+}
+else{
+if(fwrite($op, $tekst) ===false){
+echo "Dodanie komentarza nie powiod³o siê";
+}
+}
+}
+?>
+
+
+
+
+<html>
+<head></head>
+<body>
+
+
+<div>
+<form action="php.php" method="post">
+<p><b>Doadj swój komentarz </b><br/>
+(Maksymalnie 255 znaków)</p>
+
+<textarea name="komentarz" rows="6" cols="50" wrap="virtual"></textarea><br/>
+<input type="submit" value="Wyslij">
+</div>
+</form>
+
+<p><b>Dodane opinie:</b></p><br/>
+<div>
+
+<?php
+$pass='';
+if(file_exists('./pass.txt')){
+$opinie = file_get_contents('./pass.txt');
+$opinie = nl2br($pass);
+}
+
+if($pass !=''){
+echo $pass;
+}
+else{
+echo "Brak opinii  na ten temat.";
+}
+?>
+</div>
+</body>
+</html>
+
+
